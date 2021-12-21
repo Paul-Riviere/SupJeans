@@ -52,12 +52,11 @@ Les pages liées au compte sont les suivantes :
 Le nom de ses pages est assez parlant et ne nécessite pas plus d'explications, on peut les retrouver dans le menu (une fois connecté, le bouton **Connexion** sera remplacé par **Déconnexion**)
 
 ### Articles
-#### Utilisateur
-#### Administrateur
+
 ### Catégories
-#### Utilisateur
-#### Administrateur
+
 ### Marques
-#### Utilisateur
-#### Administrateur
+
 ### Commandes
+
+### Administrateur
