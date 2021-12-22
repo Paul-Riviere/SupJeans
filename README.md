@@ -22,6 +22,8 @@ Dans un soucis de praticité, et puisque ceci est un projet de cours, les items 
 
 Toujours dans un soucis de praticité, les mots de passe des utilisateurs seront stockés en clair sans chiffrement, une sécurisation peut se mettre en place assez facilement.
 
+Pour les commandes, la quantité d'un article n'étant pas demandée dans le sujet elle n'est pas implémentée. Aussi, une ligne dans la tables **COMMANDES** contiendra dans le champ ***ARTICLES*** une liste d'ID d'**ARTICLES** séparés par des virgules. Ex : '12,45,76,345,263'.
+
 Une fois la base prête, les tables seront peuplées d'articles (et catégories/marques) et un utilisateur administrateur sera créé les informations suivantes pour se connecter :
 - Mail : admin@admin.com
 - Mot de passe : root
