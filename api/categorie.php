@@ -1,5 +1,5 @@
 <?php
 
-include('../../modules/categorie.php')
+include('../modules/categorie.php')
 
 // ROUTES API CATEGORIE
