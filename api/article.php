@@ -1,5 +1,5 @@
 <?php
 
-include('../../modules/article.php')
+include('../modules/article.php')
 
 // ROUTES API ARTICLE
