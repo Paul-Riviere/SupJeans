@@ -2,8 +2,8 @@
 
 // CONF DB
 
-define("UTILISATEUR_DB", 'root');
-define("MDP_DB", 'root');
-define("NOM_DB", 'supjeans');
-define("HOST", 'localhost');
-define("PORT", '3306');
+$UTILISATEUR_DB = 'root';
+$MDP_DB = 'root';
+$NOM_DB = 'supjeans';
+$HOST = 'localhost';
+$PORT = '3306';
