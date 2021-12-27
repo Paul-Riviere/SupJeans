@@ -5,5 +5,5 @@
 $UTILISATEUR_DB = 'root';
 $MDP_DB = 'root';
 $NOM_DB = 'supjeans';
-$HOST = 'localhost';
-$PORT = '3306';
+$HOST_DB = 'localhost';
+$PORT_DB = '3306';

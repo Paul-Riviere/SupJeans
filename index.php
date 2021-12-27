@@ -1,3 +1,3 @@
 <?php
 
-// Redirection accueil (?)
+header('location: ./view');

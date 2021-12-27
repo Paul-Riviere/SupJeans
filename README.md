@@ -38,10 +38,11 @@ Cet utilisateur a un historique de commandes déjà rempli afin de pouvoir parco
 ### Configuration
 Une fois la base de donnée importée, il faut changer le fichier ***conf.php*** sous le répertoire ***/include*** pour correspondre à la base de données de l'environnement sur lequel on déploie l'application :
 ```php
-$SOURCE = 'localhost' // Ou 123.456.789.123
-$PORT = '3306' // 3306 est le port par défaut de mySQL
-$NOM_DB = 'supjeans' // Ou le nom donné lors de l'import si différent
-$MDP_DB = 'root' // A changer (ou non) en fonction du mot de passe utilisé
+$UTILISATEUR_DB = 'root'; // A changer (ou non) en fonction du compte
+$MDP_DB = 'root'; // A changer (ou non) en fonction du mot de passe utilisé
+$NOM_DB = 'supjeans'; // Ou le nom donné lors de l'import si différent
+$HOST_DB = 'localhost';  // Ou 123.456.789.123
+$PORT_DB = '3306';  // 3306 est le port par défaut de mySQL
 ```
 
 Une fois la configuration terminée l'application est prête à être utilisée.
