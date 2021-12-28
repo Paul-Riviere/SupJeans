@@ -1,5 +1,13 @@
 <?php
 
-include('../include/db.php')
+include('../include/db.php');
 
-// FONCTIONS ARTICLE
+function getListeArticles() {
+    global $pdo;
+
+    $sql = "SELECT * FROM jean";
+    $statement = $pdo->prepare($sql);
+    $statement->execute();
+
+    return $statement->fetchAll(PDO::FETCH_ASSOC);
+}

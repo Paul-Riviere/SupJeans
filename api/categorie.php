@@ -3,7 +3,8 @@
 include('../modules/categorie.php');
 
 // ROUTES API CATEGORIE
-if(isset($_GET["action"])) {
+
+if (isset($_GET["action"])) {
     if ($_GET['action'] == 'getListeCategories') {
         $return = getListeCategories();
     } elseif ($_GET['action'] == '') {
