@@ -4,3 +4,22 @@
     margin: 15px;
     padding: 15px;
 }
+
+ .navMenu {
+     border: solid black 1px;
+     background-color: lightblue;
+     overflow: auto;
+     padding-bottom: 25px
+ }
+
+ header {
+     border: solid black 1px;
+     text-align: center;
+     background-color: lightgray
+ }
+
+ footer {
+     border: solid black 1px;
+     text-align: center;
+     background-color: lightgray
+ }

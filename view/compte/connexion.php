@@ -1,7 +1,13 @@
 <?php
 include('../../include_static/head.php');
 include('../../include_static/menu.php');
+?>
 
-echo 'Connexion';
+<div class="contenuPage">
+    <h1>Connexion</h1>
+</div>
 
+<?php
 include('../../include_static/footer.php');
+?>
+

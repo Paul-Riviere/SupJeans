@@ -1,7 +1,13 @@
 <?php
 include('../../include_static/head.php');
 include('../../include_static/menu.php');
+?>
 
-echo 'Liste des marques';
+<div class="contenuPage">
+    <h1>Liste des marques</h1>
+</div>
 
+<?php
 include('../../include_static/footer.php');
+?>
+

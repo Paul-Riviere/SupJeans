@@ -1,5 +1,13 @@
 <?php
 
-include('../include/db.php')
+include('../include/db.php');
 
-// FONCTIONS CATEGORIE
+function getListeCategories() {
+    global $pdo;
+
+    $sql = "SELECT * FROM categorie";
+    $statement = $pdo->prepare($sql);
+    $statement->execute();
+
+    return $statement->fetchAll(PDO::FETCH_ASSOC);
+}

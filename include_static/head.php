@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>SupJeans</title>
-    <link rel="stylesheet" href="/supjeans/assets/css/app.css">
 </head>
-<header style="border: solid black 1px; text-align: center; background-color: lightgray">
+<style> <?php include ('../../assets/css/app.css'); ?> </style>
+<header>
     <h3>HEADER</h3>
 </header>
 <body>

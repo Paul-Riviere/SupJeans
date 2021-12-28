@@ -1,3 +1,3 @@
 <?php
 
-// REDIRECTION ACCUEIL
+// Réponse mauvaise route

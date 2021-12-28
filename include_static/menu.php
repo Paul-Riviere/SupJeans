@@ -1,4 +1,4 @@
-<nav style="border: solid black 1px; background-color: lightblue; overflow: auto; padding-bottom: 25px">
+<nav class="navMenu">
     <h1>MENU :</h1>
     <div style="float: left">
         <b>SupJeans</b>
@@ -52,5 +52,27 @@
         <b>Panier</b>
         <br>
         <a href="/supjeans/view/panier/">Consulter le panier</a>
+    </div>
+    <div style="float: left">
+        &nbsp; &nbsp;
+    </div>
+    <div style="float: left">
+        <b>Admin</b>
+        <br>
+        <a href="/supjeans/view/admin/">Accueil</a>
+        <br>
+        <a href="/supjeans/view/admin/ajoutArticle.php">Ajout d'un article</a>
+        <br>
+        <a href="/supjeans/view/admin/ajoutCategorie.php">Ajout d'une catégorie</a>
+        <br>
+        <a href="/supjeans/view/admin/ajoutMarque.php">Ajout d'une marque</a>
+        <br>
+        <a href="/supjeans/view/admin/modifArticle.php">Modification d'un article</a>
+        <br>
+        <a href="/supjeans/view/admin/modifCategorie.php">Modification d'une catégorie</a>
+        <br>
+        <a href="/supjeans/view/admin/modifMarque.php">Modification d'une marque</a>
+        <br>
+        <a href="/supjeans/view/admin/histoCommandes.php">Consulter l'historique des commandes</a>
     </div>
 </nav>

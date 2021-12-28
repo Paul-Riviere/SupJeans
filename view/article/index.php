@@ -1,7 +1,13 @@
 <?php
 include('../../include_static/head.php');
 include('../../include_static/menu.php');
+?>
 
-echo 'Articles';
+<div class="contenuPage">
+    <h1>Articles</h1>
+</div>
 
+<?php
 include('../../include_static/footer.php');
+?>
+
