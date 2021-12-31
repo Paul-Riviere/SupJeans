@@ -4,17 +4,17 @@ include('../../include_static/menu.php');
 ?>
 
 <div class="contenuPage">
-    <h1>Articles</h1>
+    <h1>ADMIN - Articles</h1>
     <br>
     <br>
     <table border="1px">
         <thead>
-        <th>Nom</th>
-        <th>Marque</th>
-        <th>Categorie</th>
-        <th>Prix</th>
-        <th>Description</th>
-        <th>Photo</th>
+            <th>Nom</th>
+            <th>Marque</th>
+            <th>Categorie</th>
+            <th>Prix</th>
+            <th>Description</th>
+            <th>Photo</th>
         </thead>
         <tbody id="articles"></tbody>
     </table>
@@ -27,13 +27,13 @@ include('../../include_static/menu.php');
             let divArticles = document.getElementById("articles");
             for(const article of res) {
                 divArticles.innerHTML += '<tr>' +
-                    '<td>' + article.NOM_JEAN + '</td>' +
-                    '<td>' + article.NOM_MARQUE + '</td>' +
-                    '<td>' + article.NOM_CATEGORIE + '</td>' +
-                    '<td>' + article.PRIX + '</td>' +
-                    '<td>' + article.DESCRIPTION + '</td>' +
-                    '<td>' + article.URL_PHOTO + '</td>' +
-                    '<td><a href="details.php?idArticle=' + article.ID_JEAN + '">Détails</a></td>' +
+                        '<td>' + article.NOM_JEAN + '</td>' +
+                        '<td>' + article.NOM_MARQUE + '</td>' +
+                        '<td>' + article.NOM_CATEGORIE + '</td>' +
+                        '<td>' + article.PRIX + '</td>' +
+                        '<td>' + article.DESCRIPTION + '</td>' +
+                        '<td>' + article.URL_PHOTO + '</td>' +
+                        '<td><a href="modifArticle.php?idArticle=' + article.ID_JEAN + '">Modifier</a></td>' +
                     '</tr>'
             }
         },

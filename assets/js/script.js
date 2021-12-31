@@ -5,7 +5,7 @@ function get(url) {
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
-                    callbackSucces(xhr.responseText);
+                    callbackSucces(JSON.parse(xhr.responseText));
                 } else {
                     callbackErreur(xhr.responseText);
                 }
@@ -24,7 +24,7 @@ function post(url, callback, body) {
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
-                    callbackSucces(xhr.responseText);
+                    callbackSucces(JSON.parse(xhr.responseText));
                 } else {
                     callbackErreur(xhr.responseText);
                 }
@@ -36,7 +36,47 @@ function post(url, callback, body) {
     });
 }
 
-Promise.resolve(get('/supjeans/api/article?action=getListeArticle')).then(
-    res => {console.log(res)},
-    err => {console.log("ERREUR :" + err);}
-);
+// ARTICLES
+
+function getListeArticles() {
+    return Promise.resolve(get('/supjeans/api/article?action=getListeArticles'));
+}
+
+function getListeArticlesCategorie(idCategorie) {
+    return Promise.resolve(get('/supjeans/api/article?action=getListeArticlesCategorie&idCategorie=' + idCategorie));
+}
+
+function getListeArticlesMarque(idMarque) {
+    return Promise.resolve(get('/supjeans/api/article?action=getListeArticlesMarque&idMarque=' + idMarque));
+}
+
+function getArticle(idArticle) {
+    return Promise.resolve(get('/supjeans/api/article?action=getArticle&idArticle=' + idArticle));
+}
+
+// CATEGORIES
+
+function getListeCategories() {
+    return Promise.resolve(get('/supjeans/api/categorie?action=getListeCategories'));
+}
+
+function getCategorie(idCategorie) {
+    return Promise.resolve(get('/supjeans/api/categorie?action=getCategorie&idCategorie=' + idCategorie));
+}
+
+// MARQUES
+
+function getListeMarques() {
+    return Promise.resolve(get('/supjeans/api/marque?action=getListeMarques'));
+}
+
+function getMarque(idMarque) {
+    return Promise.resolve(get('/supjeans/api/marque?action=getMarque&idMarque=' + idMarque));
+}
+
+// COMMANDES
+
+function getListeCommandes() {
+    return Promise.resolve(get('/supjeans/api/commande?action=getListeCommandes'));
+
+}

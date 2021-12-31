@@ -61,17 +61,11 @@
         <br>
         <a href="/supjeans/view/admin/">Accueil</a>
         <br>
-        <a href="/supjeans/view/admin/ajoutArticle.php">Ajout d'un article</a>
+        <a href="/supjeans/view/admin/article.php">Articles</a>
         <br>
-        <a href="/supjeans/view/admin/ajoutCategorie.php">Ajout d'une catégorie</a>
+        <a href="/supjeans/view/admin/categorie.php">Catégorie</a>
         <br>
-        <a href="/supjeans/view/admin/ajoutMarque.php">Ajout d'une marque</a>
-        <br>
-        <a href="/supjeans/view/admin/modifArticle.php">Modification d'un article</a>
-        <br>
-        <a href="/supjeans/view/admin/modifCategorie.php">Modification d'une catégorie</a>
-        <br>
-        <a href="/supjeans/view/admin/modifMarque.php">Modification d'une marque</a>
+        <a href="/supjeans/view/admin/marque.php">Marques</a>
         <br>
         <a href="/supjeans/view/admin/histoCommandes.php">Consulter l'historique des commandes</a>
     </div>

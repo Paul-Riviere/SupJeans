@@ -7,8 +7,13 @@ include('../modules/marque.php');
 if (isset($_GET["action"])) {
     if ($_GET['action'] == 'getListeMarques') {
         $return = getListeMarques();
-    } elseif ($_GET['action'] == '') {
-
+    } elseif ($_GET['action'] == 'getMarque') {
+        if ($_GET['idMarque']) {
+            $return = getMarque($_GET['idMarque']);
+        } else {
+            http_response_code(500);
+            $return = "Paramètre manquant";
+        }
     } else {
         $return = "Mauvaise URL / Paramètres";
     }
