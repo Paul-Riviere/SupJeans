@@ -23,3 +23,7 @@
      text-align: center;
      background-color: lightgray
  }
+
+ fieldset {
+     width: fit-content;
+ }

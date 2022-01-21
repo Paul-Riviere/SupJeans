@@ -17,7 +17,7 @@ function get(url) {
     });
 }
 
-function post(url, callback, body) {
+function post(url, body) {
     return new Promise((callbackSucces, callbackErreur) => {
         var xhr = new XMLHttpRequest();
 
@@ -31,7 +31,7 @@ function post(url, callback, body) {
             }
         };
 
-        xhr.open('POST', callback);
+        xhr.open('POST', url);
         xhr.send(body);
     });
 }
@@ -79,4 +79,10 @@ function getMarque(idMarque) {
 function getListeCommandes() {
     return Promise.resolve(get('/supjeans/api/commande?action=getListeCommandes'));
 
+}
+
+// COMPTE
+
+function inscription(utilisateur) {
+    return Promise.resolve(post('/supjeans/api/utilisateur?action=inscription', utilisateur));
 }
